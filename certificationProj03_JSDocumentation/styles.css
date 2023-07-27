@@ -1,0 +1,114 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  color: #66676B;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+nav header {
+  border: 0;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+nav ul {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  border-top: 1px solid black;
+  list-style: none;
+  padding: 2px 0 2px 8px;
+}
+
+nav ul li:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+nav ul li a {
+  display: block;
+  color: #66676B;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10 20px;
+}
+
+main {
+  flex-grow: 1;
+  border-left: 1.5px solid grey;
+}
+
+.main-container {
+  margin: 50px 40px;
+}
+
+main header {
+  text-align: left;
+  font-size: 30px;
+}
+
+header {
+  color: black;
+}
+
+section {
+  line-height: 32px;
+  font-size: 18px;
+}
+
+p {
+  margin-left: 20px;  
+}
+
+main ul {
+  margin-left: 20px;
+}
+
+.code-container {
+  background-color: #F7F7F7;
+  padding: 20px;
+}
+
+.indent {
+  text-indent: 20px;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    flex-direction: row;
+  }
+  nav {
+    max-width: 350px;
+    position: sticky;
+    top: 0px;
+  }
+}

@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 20px 10px;
+  margin: 0.125em;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #EEEEEE
+}
+
+#header-img {
+  max-width: 300px;
+  align-self: center;
+}
+
+/* nav is within the header */
+nav {
+  align-self: center;
+  padding: 1em 1em 0.5em 1em;
+  text-align: center;
+  
+}
+
+nav a {
+  padding: 0.25em;
+  margin: 0 1em;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  font-size: 25px;
+  font-weight: 550;
+}
+
+form {
+  margin-bottom: 100px;
+}
+
+form label, form input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#email {
+  padding: 5px 50px;
+  border: 1.5px solid grey;
+  border-radius: 2px;
+}
+
+.button {
+  border: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  background-color: #F1C40E;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+/* Contains everything below the email submit */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#features {
+  margin-bottom: 5em;
+}
+
+.feature-section {
+  display: flex;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.icon {
+  flex-direction: column;
+  width: 20%;
+}
+
+.feature-text {
+  width: 80%;
+  text-align: left;
+}
+
+.feature-text h1 {
+  margin: 0.125em 0;
+}
+
+.feature-text p {
+  margin: 0.125em 0;
+}
+
+.fa {
+  color: #FF8C00;
+}
+
+i.fa.fa-3x {
+  font-size: 3.5em;
+}
+
+#pricing {
+  margin: 0.5rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.price-box {
+  margin: 4.5em 0 3em 0;
+  column-gap: 1em;
+  border: 1.5px solid black;
+  border-radius: 2px;
+}
+
+.price-box-gap {
+  border: 0;
+}
+
+.price-box h2 {
+  background-color: #DDDDDD;
+  margin-top: 0;
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 0.75em 0;
+}
+
+#pricing p {
+  font-size: 17px;
+}
+
+#pricing .button {
+  font-weight: normal;
+  padding: 13px 24px;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: #DDDDDD
+}
+
+#footer-nav {
+  text-align: right;
+  padding: 1em 0 0 0;
+}
+
+#footer-nav a {
+  margin-right: 20px;
+}
+
+.footer-p {
+  text-align: right;
+  padding: 0.25em 1em 1.75em 0;
+  margin: 0;
+  color: #444
+}
+
+/* I'm sorry this is going against coding for mobile first. I can switch it around later. */
+
+
+
+
+@media screen and (min-width: 730px) {
+  nav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 710px) {
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  nav {
+    padding: 1em 1em 0.5em 1em;
+  }
+  
+  nav ul {
+    margin-right: 30px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  #pricing {
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+  }
+
+  #header-img {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  form {
+    margin-bottom: 3em;
+  }
+
+  .feature-section {
+    margin-top: 2em;
+  }
+
+  .feature-text {
+    margin: 0 15px;
+  }
+
+  .container {
+    width: 320px;
+  }
+
+  iframe {
+    width: 320px;
+    height: 180px;
+  }
+
+  #pricing {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin-top: 20px;
+  }
+
+  .price-box {
+    margin: 0.125em 0;
+  }
+
+  #footer nav {
+    text-align: center;
+  }
+  #footer p {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
